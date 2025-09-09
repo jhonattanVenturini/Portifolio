@@ -5,322 +5,199 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfólio - Jhonattan Venturini</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Bootstrap Icons -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
-  <!-- CSS personalizado -->
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">Jhonattan Venturini</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
-          <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Hero / Home -->
-  <header class="header d-flex align-items-center justify-content-center text-center" style="min-height: 60vh;">
-    <div class="container text-white">
-      <h1 class="display-4">Olá, eu sou Jhonattan Venturini</h1>
-      <p class="lead">Desenvolvedor Full Stack com foco em Backend! 👨‍💻</p>
-      <a href="#projetos" class="btn btn-primary btn-lg mt-3">Ver meus projetos</a>
-    </div>
+  <header>
+    <h1>🚀 Jhonattan Venturini</h1>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
+    </nav>
   </header>
 
-  <!-- Sobre Mim -->
-  <section id="sobre" class="py-5 text-center">
-    <div class="container">
-      <!-- Foto -->
-      <img src="/ASSETS/jhonattan.jpeg" alt="Jhonattan Venturini" class="rounded-circle shadow mb-4"
-        style="width:200px; height:200px; object-fit:cover;">
-      <h2 class="mb-4">Sobre mim</h2>
-      <p class="mx-auto" style="max-width:800px;">
-        Sou um profissional em formação no 5º semestre de Análise e Desenvolvimento de Sistemas. Transformo ideias em código, com foco em Front-End (JavaScript, React, Angular) e Back-End (Java, APIs, MySQL). Busco sempre aprender e aplicar boas práticas para criar aplicações escaláveis e eficientes.
-      </p>
-
-      <!-- Stack -->
-      <div class="mt-4">
-        <span class="badge bg-primary me-2 mb-2">Java</span>
-        <span class="badge bg-success me-2 mb-2">MySQL</span>
-        <span class="badge bg-info text-dark me-2 mb-2">Angular</span>
-        <span class="badge bg-warning text-dark me-2 mb-2">JavaScript</span>
-        <span class="badge bg-secondary me-2 mb-2">ADVPL</span>
-        <span class="badge bg-dark me-2 mb-2">APIs</span>
-      </div>
-
-      <!-- Redes Sociais -->
-      <div class="mt-3">
-        <a href="https://github.com/jhonattanVenturini" target="_blank" class="text-dark me-3 fs-4">
-          <i class="bi bi-github"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/jhonattan-venturini" target="_blank" class="text-primary fs-4">
-          <i class="bi bi-linkedin"></i>
-        </a>
-      </div>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Olá, eu sou Jhonattan 👨‍💻</h2>
+      <p>Desenvolvedor Full Stack | Foco em Back-End (Java & MySQL) e Front-End (React, Angular)</p>
+      <a href="#projetos" class="btn">Ver meus projetos</a>
     </div>
   </section>
 
-  <!-- Projetos -->
-  <section id="projetos" class="bg-light py-5">
-    <div class="container">
-      <h2 class="text-center mb-4">Meus Projetos</h2>
-      <div class="row g-4">
-
-        <!-- Replicando 6 projetos -->
-        <!-- Projeto 1 -->
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card h-100 shadow-sm project-card border-primary">
-            <div class="card-header text-white bg-primary fw-bold">Front-End</div>
-            <img src="/ASSETS/fefaf61665c8f9e926aa81693646614b.jpg" class="card-img-top" alt="Projeto 1">
-            <div class="card-body">
-              <h5 class="card-title">Site Natura</h5>
-              <p class="card-text">Replicação do site da Natura para praticar Front-End responsivo e design moderno.</p>
-              <div class="d-flex flex-column gap-2">
-                <a href="https://github.com/jhonattanVenturini/CodeBreakers_WebSite" target="_blank" class="btn btn-dark btn-sm">GitHub</a>
-                <a href="https://magical-zuccutto-49188f.netlify.app/" target="_blank" class="btn btn-success btn-sm">Visitar site</a>
-                <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#videoProjeto1">Assistir vídeo</button>
-              </div>
-            </div>
-          </div>
+  <!-- Sobre Mim -->
+  <main>
+    <section id="sobre">
+      <h2>Sobre Mim</h2>
+      <div class="sobre-container">
+        <img src="/ASSETS/jhonattan.jpeg" alt="Jhonattan Venturini" class="perfil">
+        <div>
+          <p>Tenho 23 anos, moro em São Paulo - SP, e estou cursando o 5º semestre de <b>Análise e Desenvolvimento de Sistemas</b>.
+            Atualmente sou <b>Instrutor de TI(PCD)</b> e apaixonado por criar soluções eficientes e escaláveis.</p>
+          <p>🛠️ Tecnologias principais:</p>
+          <ul>
+            <li>Java & MySQL</li>
+            <li>React& JavaScript</li>
+            <li>ADVPL & APIs</li>
+          </ul>
         </div>
+      </div>
+    </section>
+
+    <!-- Projetos -->
+    <section id="projetos">
+      <h2>Meus Projetos 🧑‍💻</h2>
+
+      <div class="grid-projetos">
+
+        <!-- Projeto 1 -->
+        <article class="project-card">
+          <img src="/ASSETS/fefaf61665c8f9e926aa81693646614b.jpg" alt="Projeto 1">
+          <div class="card-body">
+            <h5>Site Natura</h5>
+            <p>Replicação do site da Natura para praticar Front-End responsivo e design moderno.</p>
+            <a href="https://github.com/jhonattanVenturini/CodeBreakers_WebSite" target="_blank" class="btn">GitHub</a>
+            <a href="https://magical-zuccutto-49188f.netlify.app/" target="_blank" class="btn-success">Visitar</a>
+          </div>
+        </article>
 
         <!-- Projeto 2 -->
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card h-100 shadow-sm project-card border-success">
-            <div class="card-header text-white bg-success fw-bold">Front-End</div>
-            <img src="/ASSETS/Captura de tela 2025-09-08 201436.png" class="card-img-top" alt="Projeto 2">
-            <div class="card-body">
-              <h5 class="card-title">WebSite - Integratec</h5>
-              <p class="card-text">Desenvolvimento de site aonde integra jovens a sua primeira oportunidade.</p>
-              <div class="d-flex flex-column gap-2">
-                <a href="https://github.com/FelipeLRomao/Integratec" target="_blank" class="btn btn-dark btn-sm">GitHub</a>
-                <a href="https://felipelromao.github.io/Integratec/" target="_blank" class="btn btn-success btn-sm">Visitar projeto</a>
-                <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#videoProjeto2">Assistir vídeo</button>
-              </div>
-            </div>
+        <article class="project-card">
+          <img src="/ASSETS/Captura de tela 2025-09-08 201436.png" alt="Projeto 2">
+          <div class="card-body">
+            <h5>WebSite Integratec</h5>
+            <p>Plataforma que conecta jovens à sua primeira oportunidade de trabalho.</p>
+            <a href="https://github.com/FelipeLRomao/Integratec" target="_blank" class="btn">GitHub</a>
+            <a href="https://felipelromao.github.io/Integratec/" target="_blank" class="btn-success">Visitar</a>
           </div>
-        </div>
+        </article>
 
         <!-- Projeto 3 -->
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card h-100 shadow-sm project-card border-warning">
-            <div class="card-header text-dark bg-warning fw-bold">Front-End</div>
-            <img src="/ASSETS/cronometro.jpg" class="card-img-top" alt="Projeto 3">
-            <div class="card-body">
-              <h5 class="card-title">Cronômetro </h5>
-              <p class="card-text">Um cronômetro simples em HTML, CSS e JavaScript para iniciar, pausar e resetar a contagem de tempo</p>
-              <div class="d-flex flex-column gap-2">
-                <a href="https://github.com/jhonattanVenturini/Cronometro_JS" target="_blank" class="btn btn-dark btn-sm">GitHub</a>
-                <a href="https://jhonattanventurini.github.io/Cronometro_JS/" target="_blank" class="btn btn-success btn-sm">Visitar projeto</a>
-                <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#videoProjeto3">Assistir vídeo</button>
-              </div>
-            </div>
+        <article class="project-card">
+          <img src="/ASSETS/cronometro.jpg" alt="Projeto 3">
+          <div class="card-body">
+            <h5>Cronômetro</h5>
+            <p>Aplicação em HTML, CSS e JS para iniciar, pausar e resetar o tempo.</p>
+            <a href="https://github.com/jhonattanVenturini/Cronometro_JS" target="_blank" class="btn">GitHub</a>
+            <a href="https://jhonattanventurini.github.io/Cronometro_JS/" target="_blank" class="btn-success">Visitar</a>
           </div>
-        </div>
+        </article>
 
         <!-- Projeto 4 -->
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card h-100 shadow-sm project-card border-info">
-            <div class="card-header text-dark bg-info fw-bold">Back-End</div>
-            <img src="/ASSETS/logo.php" class="card-img-top" alt="Projeto 4">
-            <div class="card-body">
-              <h5 class="card-title">Royal Caribe </h5>
-              <p class="card-text">Projeto aonde desenvolvi um sistema que pegas as informações do banco de dados e exibia elas na web.</p>
-              <div class="d-flex flex-column gap-2">
-                <a href="https://github.com/jhonattanVenturini/DevNexus_Projeto_PHP" target="_blank" class="btn btn-dark btn-sm">GitHub</a>
-                <a href="#" class="btn btn-success btn-sm">Visitar projeto</a>
-                <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#videoProjeto4">Assistir vídeo</button>
-              </div>
-            </div>
+        <article class="project-card">
+          <img src="/ASSETS/logo.php" alt="Projeto 4">
+          <div class="card-body">
+            <h5>Royal Caribe</h5>
+            <p>Sistema que exibe informações do banco de dados em páginas dinâmicas.</p>
+            <a href="https://github.com/jhonattanVenturini/DevNexus_Projeto_PHP" target="_blank" class="btn">GitHub</a>
+            </a>
+            <a href="/ASSETS/Gravação de Tela 2024-12-23 214346.mp4" class="btn btn-success2" onclick="openVideo('video4.mp4')">Execução</a>
           </div>
-        </div>
+        </article>
 
         <!-- Projeto 5 -->
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card h-100 shadow-sm project-card border-secondary">
-            <div class="card-header text-white bg-secondary fw-bold">Back-End</div>
-            <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Projeto 5">
-            <div class="card-body">
-              <h5 class="card-title">Sistema de Vendas</h5>
-              <p class="card-text">Sistema Back-End para gerenciamento de vendas e estoque.</p>
-              <div class="d-flex flex-column gap-2">
-                <a href="https://github.com/seuusuario/projeto5" target="_blank" class="btn btn-dark btn-sm">GitHub</a>
-                <a href="#" target="_blank" class="btn btn-success btn-sm">Visitar projeto</a>
-                <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#videoProjeto5">Assistir vídeo</button>
-              </div>
-            </div>
+        <article class="project-card">
+          <img src="/ASSETS/codebreaks.jpg" alt="Projeto 5">
+          <div class="card-body">
+            <h5>CodeBreakers Plataforma</h5>
+            <p>Gerenciamento de vendas e estoque com relatórios de desempenho.</p>
+            <a href="https://github.com/jhonattanVenturini/projeto-php" target="_blank" class="btn">GitHub</a>
+            </a>
+            <a href="#" class="btn btn-success2" onclick="openVideo('video4.mp4')">Execução</a>
           </div>
-        </div>
+        </article>
 
         <!-- Projeto 6 -->
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card h-100 shadow-sm project-card border-dark">
-            <div class="card-header text-white bg-dark fw-bold">Full-Stack</div>
-            <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Projeto 6">
-            <div class="card-body">
-              <h5 class="card-title">Portal de Conteúdo</h5>
-              <p class="card-text">Aplicação Full-Stack para publicação e gerenciamento de conteúdos online.</p>
-              <div class="d-flex flex-column gap-2">
-                <a href="https://github.com/seuusuario/projeto6" target="_blank" class="btn btn-dark btn-sm">GitHub</a>
-                <a href="#" target="_blank" class="btn btn-success btn-sm">Visitar projeto</a>
-                <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#videoProjeto6">Assistir vídeo</button>
-              </div>
-            </div>
+        <article class="project-card">
+          <img src="/ASSETS/JAVA&MYSQL.jpg" alt="Projeto 6">
+          <div class="card-body">
+            <h5>CRUD Java + MySQL</h5>
+            <p>Aplicação orientada a objetos integrada ao MySQL para cadastro e gestão de clientes.</p>
+            <a href="https://github.com/jhonattanVenturini/Crud_Java" target="_blank" class="btn">GitHub</a>
+            </a>
+            <a href="/ASSETS/Gravação de Tela 2025-09-08 225450.mp4" class="btn btn-success2" onclick="openVideo('video4.mp4')">Execução</a>
           </div>
-        </div>
+        </article>
+        <!-- Futuro 1 -->
+        <article class="project-card">
+          <img src="/ASSETS/crm.jpg" alt="Futuro 1">
+          <div class="card-body">
+            <h5>CRM Dashboard</h5>
+            <p>Plataforma para gerenciar clientes corporativos, leads e métricas de vendas em tempo real.</p>
+            <a href="#" class="btn">GitHub</a>
+            <a href="#" class="btn-success2">Execução</a>
+          </div>
+        </article>
 
+        <!-- Futuro 2 -->
+        <article class="project-card">
+          <img src="/ASSETS/ERP.png" alt="Futuro 2">
+          <div class="card-body">
+            <h5>Sistema ERP</h5>
+            <p>Gestão integrada de estoque, compras, finanças e relatórios para empresas B2B.</p>
+            <a href="#" class="btn">GitHub</a>
+            <a href="#" class="btn-success2">Execução</a>
+          </div>
+        </article>
+
+        <!-- Futuro 3 -->
+        <article class="project-card">
+          <img src="/ASSETS/power-BI.png" alt="Futuro 3">
+          <div class="card-body">
+            <h5>Plataforma BI</h5>
+            <p>Dashboard inteligente que fornece insights estratégicos para tomada de decisões empresariais.</p>
+            <a href="#" class="btn">GitHub</a>
+            <a href="#" class="btn-success2">Execução</a>
+          </div>
+        </article>
+
+        <!-- Futuro 4 -->
+        <article class="project-card">
+          <img src="/ASSETS/automacao-processos.png" alt="Futuro 4">
+          <div class="card-body">
+            <h5>Automação de Processos</h5>
+            <p>Sistema para automatizar processos internos de empresas, reduzindo erros e aumentando produtividade.</p>
+            <a href="#" class="btn">GitHub</a>
+            <a href="#" class="btn-success2">Execução</a>
+          </div>
+        </article>
       </div>
-    </div>
-  </section>
-
-  <!-- Modals para vídeos -->
-  <div class="modal fade" id="videoProjeto1" tabindex="-1" aria-labelledby="videoProjeto1Label" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
+    </section>
+    <!-- Modal para vídeo -->
+    <div id="videoModal" class="modal">
       <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="videoProjeto1Label">Site Natura - Front-End</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-        </div>
-        <div class="modal-body">
-          <div class="ratio ratio-16x9">
-            <iframe src="/ASSETS/Gravando 2025-09-08 194454.mp4" title="Vídeo do Projeto" allowfullscreen></iframe>
-          </div>
-        </div>
+        <span class="close" onclick="closeVideo()">&times;</span>
+        <video id="modalVideo" controls autoplay style="width:100%; max-width:600px;"></video>
       </div>
     </div>
-  </div>
 
-  <!-- Replicar modal para os outros projetos -->
-  <div class="modal fade" id="videoProjeto2" tabindex="-1" aria-labelledby="videoProjeto2Label" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="videoProjeto2Label">Integratec - Front End</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-        </div>
-        <div class="modal-body">
-          <div class="ratio ratio-16x9">
-            <iframe src="/ASSETS/Gravando 2025-09-08 202532.mp4" title="Vídeo do Projeto" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+    <!-- Contato -->
+      <section id="contato">
+        <h2>Entre em Contato</h2>
+        <form action="https://formspree.io/f/xzzaopkd"  method="post"  id="contatoForm">
+          <input type="text" name="nome" placeholder="Seu nome" required>
+          <input type="email" name="email" placeholder="Seu e-mail" required>
+          <textarea name="mensagem" rows="5" placeholder="Escreva sua mensagem..." required></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+        <p id="msgSucesso" style="color:green; display:none; margin-top:10px;">Mensagem enviada com sucesso!</p>
+        <p id="msgErro" style="color:red; display:none; margin-top:10px;">Erro ao enviar. Tente novamente.</p>
+      </section>
 
-  <div class="modal fade" id="videoProjeto3" tabindex="-1" aria-labelledby="videoProjeto3Label" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="videoProjeto3Label">Cronômetro - Front End</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-        </div>
-        <div class="modal-body">
-          <div class="ratio ratio-16x9">
-            <iframe src="/ASSETS/Gravando 2025-09-08 223937.mp4" title="Vídeo do Projeto" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+    </section>
 
-  <div class="modal fade" id="videoProjeto4" tabindex="-1" aria-labelledby="videoProjeto4Label" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="videoProjeto4Label">Royal Caribe - Back-End</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-        </div>
-        <div class="modal-body">
-          <div class="ratio ratio-16x9">
-            <iframe src="/ASSETS/Gravação de Tela 2024-12-23 214346.mp4" title="Vídeo do Projeto" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+    </section>
 
-  <div class="modal fade" id="videoProjeto5" tabindex="-1" aria-labelledby="videoProjeto5Label" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="videoProjeto5Label">Sistema de Vendas - Back-End</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-        </div>
-        <div class="modal-body">
-          <div class="ratio ratio-16x9">
-            <iframe src="https://www.youtube.com/embed/SEU_VIDEO_ID_5" title="Vídeo do Projeto" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade" id="videoProjeto6" tabindex="-1" aria-labelledby="videoProjeto6Label" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="videoProjeto6Label">Portal de Conteúdo - Full-Stack</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-        </div>
-        <div class="modal-body">
-          <div class="ratio ratio-16x9">
-            <iframe src="https://www.youtube.com/embed/SEU_VIDEO_ID_6" title="Vídeo do Projeto" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Contato -->
-  <section id="contato" class="py-5">
-    <div class="container">
-      <h2 class="text-center mb-4">Contato</h2>
-      <form id="formContato" class="mx-auto" style="max-width: 600px;">
-        <div class="mb-3">
-          <label for="nome" class="form-label">Nome</label>
-          <input type="text" class="form-control" id="nome" required>
-        </div>
-        <div class="mb-3">
-          <label for="email" class="form-label">E-mail</label>
-          <input type="email" class="form-control" id="email" required>
-        </div>
-        <div class="mb-3">
-          <label for="mensagem" class="form-label">Mensagem</label>
-          <textarea class="form-control" id="mensagem" rows="4" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Enviar</button>
-      </form>
-    </div>
-  </section>
+  </main>
 
   <!-- Footer -->
-  <footer class="bg-dark text-white text-center py-3">
-    &copy; 2025 Jhonattan Carvalho. Todos os direitos reservados.
+  <footer>
+    <p>&copy; 2025 Jhonattan Carvalho. Todos os direitos reservados.</p>
   </footer>
-
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    document.getElementById('formContato').addEventListener('submit', function (e) {
-      e.preventDefault();
-      alert('Mensagem enviada! Entrarei em contato em breve.');
-      this.reset();
-    });
-  </script>
 
 </body>
 

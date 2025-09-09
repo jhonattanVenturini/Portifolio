@@ -1,3 +1,4 @@
+/* ================= Reset e Base ================= */
 * {
   margin: 0;
   padding: 0;
@@ -11,152 +12,313 @@ body {
   line-height: 1.6;
 }
 
+/* ================= Header / Navbar ================= */
 header {
   background-color: #111827;
   color: #fff;
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 1.5rem 1rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
 }
 
 header h1 {
-  font-size: 2.5rem;
-  margin-top: 50px;
-}
-
-header nav {
-  margin-top: 1rem;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 header nav a {
   color: #93c5fd;
-  margin: 0 10px;
+  margin: 0 12px;
   text-decoration: none;
   font-weight: bold;
+  transition: 0.3s;
 }
 
 header nav a:hover {
   color: #60a5fa;
 }
 
-main {
-  max-width: 1000px;
-  margin: 2rem auto;
-  padding: 0 1rem;
+/* ================= Hero ================= */
+.hero {
+  background: linear-gradient(135deg, #2563eb, #60a5fa);
+  color: #fff;
+  text-align: center;
+  padding: 12rem 1rem 6rem 1rem;
 }
 
-section#projetos {
-  margin-bottom: 3rem;
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
 
-section#projetos h2,
-section#contato h2 {
-  font-size: 2rem;
+.hero p {
+  font-size: 1.2rem;
   margin-bottom: 1.5rem;
+}
+
+.hero .btn {
+  background-color: #fff;
+  color: #2563eb;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.hero .btn:hover {
+  background-color: #e0e7ff;
+}
+
+/* ================= Sobre Mim ================= */
+#sobre {
+  padding: 5rem 1rem 3rem 1rem;
   text-align: center;
 }
 
-/* ================= Cards de Projetos ================= */
+.sobre-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.sobre-container img.perfil {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.sobre-container p {
+  max-width: 700px;
+}
+
+.sobre-container ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.sobre-container ul li {
+  background-color: #2563eb;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+/* ================= Projetos ================= */
+#projetos {
+  background-color: #e5e7eb;
+  padding: 3rem 1rem;
+  display: grid;
+}
+
+#projetos h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+ 
+}
+
+/* Grid de projetos */
+.grid-projetos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  justify-items: center; /* centraliza os cards dentro da grid */
+}
+
+/* Cards */
 .project-card {
   background-color: #fff;
   border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+
   display: flex;
   flex-direction: column;
-  margin-bottom: 2rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  overflow: hidden; /* garante que a imagem não ultrapasse o card */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  justify-content: space-between;
+
+  min-height: 350px; /* garante uma altura mínima para uniformidade */
 }
+
 
 .project-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
 }
 
 .project-card img {
   width: 100%;
-  height: 200px; /* altura fixa */
-  object-fit: cover; /* imagem se ajusta sem distorcer */
+  height: 200px;
+  object-fit: cover;
   display: block;
 }
 
-.project-card .card-body {
-  padding: 0.75rem 1rem; /* menos espaço no topo para colar o título */
+.card-body {
+  padding: 1rem;
 }
 
-.project-card h5 {
-  margin: 0.5rem 0 0.5rem 0; /* título colado na imagem */
-  color: #1f2937;
+.card-body h5 {
+  margin: 0.5rem 0;
+  color: #111827;
   font-weight: 600;
 }
 
-/* Botões internos do card */
-.project-card .btn {
-  margin-top: 0.5rem;
+.card-body p {
+  font-size: 0.95rem;
+  margin-bottom: 0.75rem;
 }
 
-/* ================= Formulário de Contato ================= */
-section#contato form {
+.card-body .btn {
+  display: inline-block;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #fff;
+  background-color: #2563eb;
+  transition: 0.3s;
+}
+
+.card-body .btn:hover {
+  background-color: #1d4ed8;
+}
+
+.card-body .btn-success {
+   display: inline-block;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #fff;
+  background-color: orange;
+  transition: 0.3s;
+}
+
+.card-body .btn-success:hover {
+  background-color: #15803d;
+}
+ .card-body .btn-success2 {
+   display: inline-block;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #fff;
+  background-color: green;
+  transition: 0.3s;
+}
+.card-body .btn-success2:hover {
+  background-color: orange;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 12px;
+  max-width: 90%;
+}
+
+.modal .close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* ================= Contato ================= */
+#contato {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+#contato h2 {
+  margin-bottom: 2rem;
+}
+
+#contato form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   max-width: 500px;
   margin: 0 auto;
-  background-color: #fff;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-section#contato input,
-section#contato textarea {
-  width: 100%;
+#contato input, 
+#contato textarea {
   padding: 0.75rem;
   border-radius: 8px;
   border: 1px solid #ccc;
   font-size: 1rem;
 }
 
-section#contato button {
+#contato button {
   background-color: #2563eb;
-  color: white;
+  color: #fff;
   border: none;
   padding: 0.75rem;
   border-radius: 8px;
   font-size: 1rem;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: 0.3s;
 }
 
-section#contato button:hover {
+#contato button:hover {
   background-color: #1d4ed8;
 }
 
 /* ================= Footer ================= */
 footer {
   background-color: #111827;
-  color: white;
+  color: #fff;
   text-align: center;
-  padding: 1rem;
+  padding: 1.5rem;
   font-size: 0.9rem;
+  margin-top: 2rem;
 }
 
 /* ================= Responsividade ================= */
-@media (min-width: 768px) {
-  article {
+@media(min-width:768px){
+  .sobre-container {
     flex-direction: row;
-    align-items: center;
+    text-align: left;
   }
-
-  article img {
-    width: 40%;
-  }
-
-  article div {
-    flex: 1;
-    padding-left: 1rem;
-  }
-
-  .project-card {
-    flex-direction: column; /* mantém coluna em grid */
+  .sobre-container img {
+    margin-right: 2rem;
   }
 }
